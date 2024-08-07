@@ -1,0 +1,5 @@
+install.packages("readxl")
+library(readxl)
+data <- read_excel("C:/Users/aj/OneDrive/바탕 화면/대학원/2024-3학기/경영통계와 의사결정/강의참고자료/9주차/indep_FM.xlsx")
+t_test_result <- t.test(data$Finance, data$Marketing, var.equal = TRUE)
+print(t_test_result)
